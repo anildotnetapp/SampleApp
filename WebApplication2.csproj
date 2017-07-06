@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC751CFF-B30F-43E2-922E-0D2E3203408F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication2</RootNamespace>
+    <AssemblyName>WebApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Control\Footer.ascx" />
+    <Content Include="Control\Header.ascx" />
+    <Content Include="Control\LeftNavigation.ascx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="default\calendar.html" />
+    <Content Include="default\charts-flot.html" />
+    <Content Include="default\charts-morris.html" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\demo\gamma-gallery.css" />
+    <Content Include="css\demo\jasmine.css" />
+    <Content Include="css\demo\jquery-steps.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default\css\bootstrap.min.css" />
+    <Content Include="default\css\demo\gamma-gallery.css" />
+    <Content Include="default\css\demo\jasmine.css" />
+    <Content Include="default\css\demo\jquery-steps.min.css" />
+    <Content Include="default\css\style.css" />
+    <Content Include="default\dashboard-v2.html" />
+    <Content Include="default\dashboard-v3.html" />
+    <Content Include="default\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="default\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="default\img\av1.png" />
+    <Content Include="default\img\av2.png" />
+    <Content Include="default\img\av3.png" />
+    <Content Include="default\img\av4.png" />
+    <Content Include="default\img\av5.png" />
+    <Content Include="default\img\av6.png" />
+    <Content Include="default\img\av7.png" />
+    <Content Include="default\img\favicon.ico" />
+    <Content Include="default\img\gamma\medium\gallery-1.png" />
+    <Content Include="default\img\gamma\medium\gallery-2.png" />
+    <Content Include="default\img\gamma\medium\gallery-3.png" />
+    <Content Include="default\img\gamma\medium\gallery-4.png" />
+    <Content Include="default\img\gamma\medium\gallery-5.png" />
+    <Content Include="default\img\gamma\medium\gallery-6.png" />
+    <Content Include="default\img\gamma\medium\gallery-7.png" />
+    <Content Include="default\img\gamma\medium\gallery-8.png" />
+    <Content Include="default\img\gamma\medium\gallery-9.png" />
+    <Content Include="default\img\photos\profile-pic-1.png" />
+    <Content Include="default\img\thumbs\6.jpg" />
+    <Content Include="default\img\thumbs\img1.jpg" />
+    <Content Include="default\img\thumbs\img2.jpg" />
+    <Content Include="default\img\thumbs\img3.jpg" />
+    <Content Include="default\img\thumbs\img4.png" />
+    <Content Include="default\img\user.png" />
+    <Content Include="default\js\bootstrap.min.js" />
+    <Content Include="default\js\demo\charts-flot.js" />
+    <Content Include="default\js\demo\charts-morris.js" />
+    <Content Include="default\js\demo\dashboard-v2.js" />
+    <Content Include="default\js\demo\dashboard-v3.js" />
+    <Content Include="default\js\demo\form-component.js" />
+    <Content Include="default\js\demo\form-layout.js" />
+    <Content Include="default\js\demo\form-switchery.js" />
+    <Content Include="default\js\demo\form-validation.js" />
+    <Content Include="default\js\demo\form-wizard.js" />
+    <Content Include="default\js\demo\fullcalendar.js" />
+    <Content Include="default\js\demo\index.js" />
+    <Content Include="default\js\demo\mail-compose.js" />
+    <Content Include="default\js\demo\maps-vectormap.js" />
+    <Content Include="default\js\demo\misc-gmaps.js" />
+    <Content Include="default\js\demo\pages-gallery.js" />
+    <Content Include="default\js\demo\pages-register.js" />
+    <Content Include="default\js\demo\tables-datatables.js" />
+    <Content Include="default\js\demo\tables-footable.js" />
+    <Content Include="default\js\demo\ui-animation.js" />
+    <Content Include="default\js\demo\ui-dragdrop.js" />
+    <Content Include="default\js\demo\ui-nested-lists.js" />
+    <Content Include="default\js\demo\ui-panels.js" />
+    <Content Include="default\js\demo\ui-typography.js" />
+    <Content Include="default\js\demo\widgets.js" />
+    <Content Include="default\js\demo\wizard.js" />
+    <Content Include="default\js\demo\x-editable.js" />
+    <Content Include="default\js\jquery-1.11.2.min.js" />
+    <Content Include="default\js\jquery-2.1.1.min.js" />
+    <Content Include="default\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="default\js\jquery-ui.min.js" />
+    <Content Include="default\js\modernizr.custom.js" />
+    <Content Include="default\js\moment.js" />
+    <Content Include="default\js\scripts.js" />
+    <Content Include="default\plugins\animate-css\animate.min.css" />
+    <Content Include="default\plugins\bootstrap-datepicker\bootstrap-datepicker.css" />
+    <Content Include="default\plugins\bootstrap-datepicker\bootstrap-datepicker.js" />
+    <Content Include="default\plugins\bootstrap-select\bootstrap-select.min.css" />
+    <Content Include="default\plugins\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="default\plugins\bootstrap-tagsinput\bootstrap-tagsinput.css" />
+    <Content Include="default\plugins\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <Content Include="default\plugins\bootstrap-timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="default\plugins\bootstrap-timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="default\plugins\bootstrap-validator\bootstrapValidator.min.css" />
+    <Content Include="default\plugins\bootstrap-validator\bootstrapValidator.min.js" />
+    <Content Include="default\plugins\bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="default\plugins\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="default\plugins\bootstrap3-editable\img\clear.png" />
+    <Content Include="default\plugins\bootstrap3-editable\img\loading.gif" />
+    <Content Include="default\plugins\bootstrap3-editable\js\bootstrap-editable.min.js" />
+    <Content Include="default\plugins\chosen\chosen-sprite%402x.html" />
+    <Content Include="default\plugins\chosen\chosen-sprite.html" />
+    <Content Include="default\plugins\chosen\chosen.jquery.min.js" />
+    <Content Include="default\plugins\chosen\chosen.min.css" />
+    <Content Include="default\plugins\datatables\extensions\Responsive\css\dataTables.responsive.css" />
+    <Content Include="default\plugins\datatables\extensions\Responsive\js\dataTables.responsive.min.js" />
+    <Content Include="default\plugins\datatables\media\css\dataTables.bootstrap.css" />
+    <Content Include="default\plugins\datatables\media\images\sort_asc.png" />
+    <Content Include="default\plugins\datatables\media\images\sort_asc_disabled.png" />
+    <Content Include="default\plugins\datatables\media\images\sort_both.png" />
+    <Content Include="default\plugins\datatables\media\images\sort_desc.png" />
+    <Content Include="default\plugins\datatables\media\images\sort_desc_disabled.png" />
+    <Content Include="default\plugins\datatables\media\js\dataTables.bootstrap.js" />
+    <Content Include="default\plugins\datatables\media\js\jquery.dataTables.js" />
+    <Content Include="default\plugins\dropzone\dropzone.css" />
+    <Content Include="default\plugins\dropzone\dropzone.min.js" />
+    <Content Include="default\plugins\easy-pie-chart\jquery.easypiechart.min.js" />
+    <Content Include="default\plugins\fast-click\fastclick.min.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.categories.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.min.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.orderBars.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.pie.min.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.resize.min.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.selection.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.spline.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.stack.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.time.js" />
+    <Content Include="default\plugins\flot-charts\jquery.flot.tooltip.min.js" />
+    <Content Include="default\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="default\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.html" />
+    <Content Include="default\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.svg" />
+    <Content Include="default\plugins\fooTable\css\fonts\footable.svg" />
+    <Content Include="default\plugins\fooTable\css\footable.core.css" />
+    <Content Include="default\plugins\fooTable\dist\footable.all.min.js" />
+    <Content Include="default\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="default\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="default\plugins\fullcalendar\lib\jquery-ui.custom.min.js" />
+    <Content Include="default\plugins\fullcalendar\lib\moment.min.js" />
+    <Content Include="default\plugins\gamma-gallery\js\gamma.js" />
+    <Content Include="default\plugins\gamma-gallery\js\jquery.history.js" />
+    <Content Include="default\plugins\gamma-gallery\js\jquery.masonry.min.js" />
+    <Content Include="default\plugins\gamma-gallery\js\jquerypp.custom.js" />
+    <Content Include="default\plugins\gamma-gallery\js\js-url.min.js" />
+    <Content Include="default\plugins\gamma-gallery\js\modernizr.custom.70736.js" />
+    <Content Include="default\plugins\gmaps\gmaps.js" />
+    <Content Include="default\plugins\gmaps\gmaps.min.js" />
+    <Content Include="default\plugins\images\spritemap%402x.html" />
+    <Content Include="default\plugins\images\spritemap.html" />
+    <Content Include="default\plugins\img\sprite-skin-nice.png" />
+    <Content Include="default\plugins\ion-rangeslider\ion.rangeSlider.css" />
+    <Content Include="default\plugins\ion-rangeslider\ion.rangeSlider.min.js" />
+    <Content Include="default\plugins\ion-rangeslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="default\plugins\jquery-nestable\jquery.nestable.min.css" />
+    <Content Include="default\plugins\jquery-nestable\jquery.nestable.min.js" />
+    <Content Include="default\plugins\jquery-print\jQuery.print.js" />
+    <Content Include="default\plugins\jquery-ricksaw-chart\css\rickshaw.css" />
+    <Content Include="default\plugins\jquery-ricksaw-chart\js\d3.v2.js" />
+    <Content Include="default\plugins\jquery-ricksaw-chart\js\raphael-min.js" />
+    <Content Include="default\plugins\jquery-ricksaw-chart\js\rickshaw.min.js" />
+    <Content Include="default\plugins\jquery-ricksaw-chart\ricksaw.js" />
+    <Content Include="default\plugins\jquery-steps\jquery-steps.min.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-ar-mill.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-au-mill.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-de-mill.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-north_america-mill.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-uk_countries-mill.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap.css" />
+    <Content Include="default\plugins\jvectormap\jquery-jvectormap.min.js" />
+    <Content Include="default\plugins\masked-input\bootstrap-inputmask.min.js" />
+    <Content Include="default\plugins\masked-input\jquery.maskedinput.min.js" />
+    <Content Include="default\plugins\metismenu\metismenu.min.js" />
+    <Content Include="default\plugins\moment-range\moment-range.js" />
+    <Content Include="default\plugins\moment\moment.min.js" />
+    <Content Include="default\plugins\morris-js\morris.min.css" />
+    <Content Include="default\plugins\morris-js\morris.min.js" />
+    <Content Include="default\plugins\morris-js\raphael-js\raphael.min.js" />
+    <Content Include="default\plugins\nanoscrollerjs\jquery.nanoscroller.min.js" />
+    <Content Include="default\plugins\noUiSlider\jquery.nouislider.all.min.js" />
+    <Content Include="default\plugins\noUiSlider\jquery.nouislider.min.css" />
+    <Content Include="default\plugins\noUiSlider\jquery.nouislider.pips.min.css" />
+    <Content Include="default\plugins\pace\pace.min.css" />
+    <Content Include="default\plugins\pace\pace.min.js" />
+    <Content Include="default\plugins\parsley\parsley.min.js" />
+    <Content Include="default\plugins\screenfull\screenfull.js" />
+    <Content Include="default\plugins\skycons\skycons.min.js" />
+    <Content Include="default\plugins\summernote\summernote.min.css" />
+    <Content Include="default\plugins\summernote\summernote.min.js" />
+    <Content Include="default\plugins\switchery\switchery.min.css" />
+    <Content Include="default\plugins\switchery\switchery.min.js" />
+    <Content Include="default\plugins\tag-it\jquery.tagit.css" />
+    <Content Include="default\plugins\tag-it\tag-it.min.js" />
+    <Content Include="default\plugins\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="default\plugins\weather-icons\weather-icons.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="default\forms-components.html" />
+    <Content Include="default\forms-layout.html" />
+    <Content Include="default\forms-switchery.html" />
+    <Content Include="default\forms-validation.html" />
+    <Content Include="default\forms-wizard.html" />
+    <Content Include="img\av1.png" />
+    <Content Include="img\av2.png" />
+    <Content Include="img\av3.png" />
+    <Content Include="img\av4.png" />
+    <Content Include="img\av5.png" />
+    <Content Include="img\av6.png" />
+    <Content Include="img\av7.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\gamma\medium\gallery-1.png" />
+    <Content Include="img\gamma\medium\gallery-2.png" />
+    <Content Include="img\gamma\medium\gallery-3.png" />
+    <Content Include="img\gamma\medium\gallery-4.png" />
+    <Content Include="img\gamma\medium\gallery-5.png" />
+    <Content Include="img\gamma\medium\gallery-6.png" />
+    <Content Include="img\gamma\medium\gallery-7.png" />
+    <Content Include="img\gamma\medium\gallery-8.png" />
+    <Content Include="img\gamma\medium\gallery-9.png" />
+    <Content Include="img\photos\profile-pic-1.png" />
+    <Content Include="img\thumbs\6.jpg" />
+    <Content Include="img\thumbs\img1.jpg" />
+    <Content Include="img\thumbs\img2.jpg" />
+    <Content Include="img\thumbs\img3.jpg" />
+    <Content Include="img\thumbs\img4.png" />
+    <Content Include="img\user.png" />
+    <Content Include="default\index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\demo\charts-flot.js" />
+    <Content Include="js\demo\charts-morris.js" />
+    <Content Include="js\demo\dashboard-v2.js" />
+    <Content Include="js\demo\dashboard-v3.js" />
+    <Content Include="js\demo\form-component.js" />
+    <Content Include="js\demo\form-layout.js" />
+    <Content Include="js\demo\form-switchery.js" />
+    <Content Include="js\demo\form-validation.js" />
+    <Content Include="js\demo\form-wizard.js" />
+    <Content Include="js\demo\fullcalendar.js" />
+    <Content Include="js\demo\index.js" />
+    <Content Include="js\demo\mail-compose.js" />
+    <Content Include="js\demo\maps-vectormap.js" />
+    <Content Include="js\demo\misc-gmaps.js" />
+    <Content Include="js\demo\pages-gallery.js" />
+    <Content Include="js\demo\pages-register.js" />
+    <Content Include="js\demo\tables-datatables.js" />
+    <Content Include="js\demo\tables-footable.js" />
+    <Content Include="js\demo\ui-animation.js" />
+    <Content Include="js\demo\ui-dragdrop.js" />
+    <Content Include="js\demo\ui-nested-lists.js" />
+    <Content Include="js\demo\ui-panels.js" />
+    <Content Include="js\demo\ui-typography.js" />
+    <Content Include="js\demo\widgets.js" />
+    <Content Include="js\demo\wizard.js" />
+    <Content Include="js\demo\x-editable.js" />
+    <Content Include="js\jquery-1.11.2.min.js" />
+    <Content Include="js\jquery-2.1.1.min.js" />
+    <Content Include="js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\moment.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="default\layout-blank.html" />
+    <Content Include="default\layout-boxed.html" />
+    <Content Include="default\layout-collapsed-sidebar.html" />
+    <Content Include="default\layout-horizontal-menu-boxed.html" />
+    <Content Include="default\layout-horizontal-menu.html" />
+    <Content Include="default\layout-push-menu.html" />
+    <Content Include="default\layout-slide-menu.html" />
+    <Content Include="default\mail-compose.html" />
+    <Content Include="default\mail-inbox.html" />
+    <Content Include="default\mail-mailview.html" />
+    <Content Include="default\maps-gmap.html" />
+    <Content Include="default\maps-vectormap.html" />
+    <Content Include="default\pages-404.html" />
+    <Content Include="default\pages-500.html" />
+    <Content Include="default\pages-directory.html" />
+    <Content Include="default\pages-faq.html" />
+    <Content Include="default\pages-gallery.html" />
+    <Content Include="default\pages-invoice.html" />
+    <Content Include="default\pages-lock-screen.html" />
+    <Content Include="default\pages-login.html" />
+    <Content Include="default\pages-password-reminder.html" />
+    <Content Include="default\pages-profile.html" />
+    <Content Include="default\pages-register.html" />
+    <Content Include="MasterPage\css\bootstrap.min.css" />
+    <Content Include="MasterPage\css\demo\gamma-gallery.css" />
+    <Content Include="MasterPage\css\demo\jasmine.css" />
+    <Content Include="MasterPage\css\demo\jquery-steps.min.css" />
+    <Content Include="MasterPage\css\style.css" />
+    <Content Include="MasterPage\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="MasterPage\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="MasterPage\img\av1.png" />
+    <Content Include="MasterPage\img\av2.png" />
+    <Content Include="MasterPage\img\av3.png" />
+    <Content Include="MasterPage\img\av4.png" />
+    <Content Include="MasterPage\img\av5.png" />
+    <Content Include="MasterPage\img\av6.png" />
+    <Content Include="MasterPage\img\av7.png" />
+    <Content Include="MasterPage\img\favicon.ico" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-1.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-2.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-3.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-4.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-5.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-6.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-7.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-8.png" />
+    <Content Include="MasterPage\img\gamma\medium\gallery-9.png" />
+    <Content Include="MasterPage\img\photos\profile-pic-1.png" />
+    <Content Include="MasterPage\img\thumbs\6.jpg" />
+    <Content Include="MasterPage\img\thumbs\img1.jpg" />
+    <Content Include="MasterPage\img\thumbs\img2.jpg" />
+    <Content Include="MasterPage\img\thumbs\img3.jpg" />
+    <Content Include="MasterPage\img\thumbs\img4.png" />
+    <Content Include="MasterPage\img\user.png" />
+    <Content Include="MasterPage\js\bootstrap.min.js" />
+    <Content Include="MasterPage\js\demo\charts-flot.js" />
+    <Content Include="MasterPage\js\demo\charts-morris.js" />
+    <Content Include="MasterPage\js\demo\dashboard-v2.js" />
+    <Content Include="MasterPage\js\demo\dashboard-v3.js" />
+    <Content Include="MasterPage\js\demo\form-component.js" />
+    <Content Include="MasterPage\js\demo\form-layout.js" />
+    <Content Include="MasterPage\js\demo\form-switchery.js" />
+    <Content Include="MasterPage\js\demo\form-validation.js" />
+    <Content Include="MasterPage\js\demo\form-wizard.js" />
+    <Content Include="MasterPage\js\demo\fullcalendar.js" />
+    <Content Include="MasterPage\js\demo\index.js" />
+    <Content Include="MasterPage\js\demo\mail-compose.js" />
+    <Content Include="MasterPage\js\demo\maps-vectormap.js" />
+    <Content Include="MasterPage\js\demo\misc-gmaps.js" />
+    <Content Include="MasterPage\js\demo\pages-gallery.js" />
+    <Content Include="MasterPage\js\demo\pages-register.js" />
+    <Content Include="MasterPage\js\demo\tables-datatables.js" />
+    <Content Include="MasterPage\js\demo\tables-footable.js" />
+    <Content Include="MasterPage\js\demo\ui-animation.js" />
+    <Content Include="MasterPage\js\demo\ui-dragdrop.js" />
+    <Content Include="MasterPage\js\demo\ui-nested-lists.js" />
+    <Content Include="MasterPage\js\demo\ui-panels.js" />
+    <Content Include="MasterPage\js\demo\ui-typography.js" />
+    <Content Include="MasterPage\js\demo\widgets.js" />
+    <Content Include="MasterPage\js\demo\wizard.js" />
+    <Content Include="MasterPage\js\demo\x-editable.js" />
+    <Content Include="MasterPage\js\jquery-1.11.2.min.js" />
+    <Content Include="MasterPage\js\jquery-2.1.1.min.js" />
+    <Content Include="MasterPage\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="MasterPage\js\jquery-ui.min.js" />
+    <Content Include="MasterPage\js\modernizr.custom.js" />
+    <Content Include="MasterPage\js\moment.js" />
+    <Content Include="MasterPage\js\scripts.js" />
+    <Content Include="MasterPage\plugins\animate-css\animate.min.css" />
+    <Content Include="MasterPage\plugins\bootstrap-datepicker\bootstrap-datepicker.css" />
+    <Content Include="MasterPage\plugins\bootstrap-datepicker\bootstrap-datepicker.js" />
+    <Content Include="MasterPage\plugins\bootstrap-select\bootstrap-select.min.css" />
+    <Content Include="MasterPage\plugins\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="MasterPage\plugins\bootstrap-tagsinput\bootstrap-tagsinput.css" />
+    <Content Include="MasterPage\plugins\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <Content Include="MasterPage\plugins\bootstrap-timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="MasterPage\plugins\bootstrap-timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="MasterPage\plugins\bootstrap-validator\bootstrapValidator.min.css" />
+    <Content Include="MasterPage\plugins\bootstrap-validator\bootstrapValidator.min.js" />
+    <Content Include="MasterPage\plugins\bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="MasterPage\plugins\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="MasterPage\plugins\bootstrap3-editable\img\clear.png" />
+    <Content Include="MasterPage\plugins\bootstrap3-editable\img\loading.gif" />
+    <Content Include="MasterPage\plugins\bootstrap3-editable\js\bootstrap-editable.min.js" />
+    <Content Include="MasterPage\plugins\chosen\chosen-sprite%402x.html" />
+    <Content Include="MasterPage\plugins\chosen\chosen-sprite.html" />
+    <Content Include="MasterPage\plugins\chosen\chosen.jquery.min.js" />
+    <Content Include="MasterPage\plugins\chosen\chosen.min.css" />
+    <Content Include="MasterPage\plugins\datatables\extensions\Responsive\css\dataTables.responsive.css" />
+    <Content Include="MasterPage\plugins\datatables\extensions\Responsive\js\dataTables.responsive.min.js" />
+    <Content Include="MasterPage\plugins\datatables\media\css\dataTables.bootstrap.css" />
+    <Content Include="MasterPage\plugins\datatables\media\images\sort_asc.png" />
+    <Content Include="MasterPage\plugins\datatables\media\images\sort_asc_disabled.png" />
+    <Content Include="MasterPage\plugins\datatables\media\images\sort_both.png" />
+    <Content Include="MasterPage\plugins\datatables\media\images\sort_desc.png" />
+    <Content Include="MasterPage\plugins\datatables\media\images\sort_desc_disabled.png" />
+    <Content Include="MasterPage\plugins\datatables\media\js\dataTables.bootstrap.js" />
+    <Content Include="MasterPage\plugins\datatables\media\js\jquery.dataTables.js" />
+    <Content Include="MasterPage\plugins\dropzone\dropzone.css" />
+    <Content Include="MasterPage\plugins\dropzone\dropzone.min.js" />
+    <Content Include="MasterPage\plugins\easy-pie-chart\jquery.easypiechart.min.js" />
+    <Content Include="MasterPage\plugins\fast-click\fastclick.min.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.categories.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.min.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.orderBars.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.pie.min.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.resize.min.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.selection.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.spline.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.stack.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.time.js" />
+    <Content Include="MasterPage\plugins\flot-charts\jquery.flot.tooltip.min.js" />
+    <Content Include="MasterPage\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="MasterPage\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.html" />
+    <Content Include="MasterPage\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.svg" />
+    <Content Include="MasterPage\plugins\fooTable\css\fonts\footable.svg" />
+    <Content Include="MasterPage\plugins\fooTable\css\footable.core.css" />
+    <Content Include="MasterPage\plugins\fooTable\dist\footable.all.min.js" />
+    <Content Include="MasterPage\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="MasterPage\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="MasterPage\plugins\fullcalendar\lib\jquery-ui.custom.min.js" />
+    <Content Include="MasterPage\plugins\fullcalendar\lib\moment.min.js" />
+    <Content Include="MasterPage\plugins\gamma-gallery\js\gamma.js" />
+    <Content Include="MasterPage\plugins\gamma-gallery\js\jquery.history.js" />
+    <Content Include="MasterPage\plugins\gamma-gallery\js\jquery.masonry.min.js" />
+    <Content Include="MasterPage\plugins\gamma-gallery\js\jquerypp.custom.js" />
+    <Content Include="MasterPage\plugins\gamma-gallery\js\js-url.min.js" />
+    <Content Include="MasterPage\plugins\gamma-gallery\js\modernizr.custom.70736.js" />
+    <Content Include="MasterPage\plugins\gmaps\gmaps.js" />
+    <Content Include="MasterPage\plugins\gmaps\gmaps.min.js" />
+    <Content Include="MasterPage\plugins\images\spritemap%402x.html" />
+    <Content Include="MasterPage\plugins\images\spritemap.html" />
+    <Content Include="MasterPage\plugins\img\sprite-skin-nice.png" />
+    <Content Include="MasterPage\plugins\ion-rangeslider\ion.rangeSlider.css" />
+    <Content Include="MasterPage\plugins\ion-rangeslider\ion.rangeSlider.min.js" />
+    <Content Include="MasterPage\plugins\ion-rangeslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="MasterPage\plugins\jquery-nestable\jquery.nestable.min.css" />
+    <Content Include="MasterPage\plugins\jquery-nestable\jquery.nestable.min.js" />
+    <Content Include="MasterPage\plugins\jquery-print\jQuery.print.js" />
+    <Content Include="MasterPage\plugins\jquery-ricksaw-chart\css\rickshaw.css" />
+    <Content Include="MasterPage\plugins\jquery-ricksaw-chart\js\d3.v2.js" />
+    <Content Include="MasterPage\plugins\jquery-ricksaw-chart\js\raphael-min.js" />
+    <Content Include="MasterPage\plugins\jquery-ricksaw-chart\js\rickshaw.min.js" />
+    <Content Include="MasterPage\plugins\jquery-ricksaw-chart\ricksaw.js" />
+    <Content Include="MasterPage\plugins\jquery-steps\jquery-steps.min.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-ar-mill.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-au-mill.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-de-mill.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-north_america-mill.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-uk_countries-mill.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap.css" />
+    <Content Include="MasterPage\plugins\jvectormap\jquery-jvectormap.min.js" />
+    <Content Include="MasterPage\plugins\masked-input\bootstrap-inputmask.min.js" />
+    <Content Include="MasterPage\plugins\masked-input\jquery.maskedinput.min.js" />
+    <Content Include="MasterPage\plugins\metismenu\metismenu.min.js" />
+    <Content Include="MasterPage\plugins\moment-range\moment-range.js" />
+    <Content Include="MasterPage\plugins\moment\moment.min.js" />
+    <Content Include="MasterPage\plugins\morris-js\morris.min.css" />
+    <Content Include="MasterPage\plugins\morris-js\morris.min.js" />
+    <Content Include="MasterPage\plugins\morris-js\raphael-js\raphael.min.js" />
+    <Content Include="MasterPage\plugins\nanoscrollerjs\jquery.nanoscroller.min.js" />
+    <Content Include="MasterPage\plugins\noUiSlider\jquery.nouislider.all.min.js" />
+    <Content Include="MasterPage\plugins\noUiSlider\jquery.nouislider.min.css" />
+    <Content Include="MasterPage\plugins\noUiSlider\jquery.nouislider.pips.min.css" />
+    <Content Include="MasterPage\plugins\pace\pace.min.css" />
+    <Content Include="MasterPage\plugins\pace\pace.min.js" />
+    <Content Include="MasterPage\plugins\parsley\parsley.min.js" />
+    <Content Include="MasterPage\plugins\screenfull\screenfull.js" />
+    <Content Include="MasterPage\plugins\skycons\skycons.min.js" />
+    <Content Include="MasterPage\plugins\summernote\summernote.min.css" />
+    <Content Include="MasterPage\plugins\summernote\summernote.min.js" />
+    <Content Include="MasterPage\plugins\switchery\switchery.min.css" />
+    <Content Include="MasterPage\plugins\switchery\switchery.min.js" />
+    <Content Include="MasterPage\plugins\tag-it\jquery.tagit.css" />
+    <Content Include="MasterPage\plugins\tag-it\tag-it.min.js" />
+    <Content Include="MasterPage\plugins\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="MasterPage\plugins\weather-icons\weather-icons.min.css" />
+    <Content Include="plugins\animate-css\animate.min.css" />
+    <Content Include="plugins\bootstrap-datepicker\bootstrap-datepicker.css" />
+    <Content Include="plugins\bootstrap-datepicker\bootstrap-datepicker.js" />
+    <Content Include="plugins\bootstrap-select\bootstrap-select.min.css" />
+    <Content Include="plugins\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="plugins\bootstrap-tagsinput\bootstrap-tagsinput.css" />
+    <Content Include="plugins\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <Content Include="plugins\bootstrap-timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="plugins\bootstrap-timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="plugins\bootstrap-validator\bootstrapValidator.min.css" />
+    <Content Include="plugins\bootstrap-validator\bootstrapValidator.min.js" />
+    <Content Include="plugins\bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="plugins\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="plugins\bootstrap3-editable\img\clear.png" />
+    <Content Include="plugins\bootstrap3-editable\img\loading.gif" />
+    <Content Include="plugins\bootstrap3-editable\js\bootstrap-editable.min.js" />
+    <Content Include="plugins\chosen\chosen-sprite%402x.html" />
+    <Content Include="plugins\chosen\chosen-sprite.html" />
+    <Content Include="plugins\chosen\chosen.jquery.min.js" />
+    <Content Include="plugins\chosen\chosen.min.css" />
+    <Content Include="plugins\datatables\extensions\Responsive\css\dataTables.responsive.css" />
+    <Content Include="plugins\datatables\extensions\Responsive\js\dataTables.responsive.min.js" />
+    <Content Include="plugins\datatables\media\css\dataTables.bootstrap.css" />
+    <Content Include="plugins\datatables\media\images\sort_asc.png" />
+    <Content Include="plugins\datatables\media\images\sort_asc_disabled.png" />
+    <Content Include="plugins\datatables\media\images\sort_both.png" />
+    <Content Include="plugins\datatables\media\images\sort_desc.png" />
+    <Content Include="plugins\datatables\media\images\sort_desc_disabled.png" />
+    <Content Include="plugins\datatables\media\js\dataTables.bootstrap.js" />
+    <Content Include="plugins\datatables\media\js\jquery.dataTables.js" />
+    <Content Include="plugins\dropzone\dropzone.css" />
+    <Content Include="plugins\dropzone\dropzone.min.js" />
+    <Content Include="plugins\easy-pie-chart\jquery.easypiechart.min.js" />
+    <Content Include="plugins\fast-click\fastclick.min.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.categories.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.min.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.orderBars.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.pie.min.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.resize.min.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.selection.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.spline.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.stack.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.time.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.tooltip.min.js" />
+    <Content Include="plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.html" />
+    <Content Include="plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.svg" />
+    <Content Include="plugins\fooTable\css\fonts\footable.svg" />
+    <Content Include="plugins\fooTable\css\footable.core.css" />
+    <Content Include="plugins\fooTable\dist\footable.all.min.js" />
+    <Content Include="plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="plugins\fullcalendar\lib\jquery-ui.custom.min.js" />
+    <Content Include="plugins\fullcalendar\lib\moment.min.js" />
+    <Content Include="plugins\gamma-gallery\js\gamma.js" />
+    <Content Include="plugins\gamma-gallery\js\jquery.history.js" />
+    <Content Include="plugins\gamma-gallery\js\jquery.masonry.min.js" />
+    <Content Include="plugins\gamma-gallery\js\jquerypp.custom.js" />
+    <Content Include="plugins\gamma-gallery\js\js-url.min.js" />
+    <Content Include="plugins\gamma-gallery\js\modernizr.custom.70736.js" />
+    <Content Include="plugins\gmaps\gmaps.js" />
+    <Content Include="plugins\gmaps\gmaps.min.js" />
+    <Content Include="plugins\images\spritemap%402x.html" />
+    <Content Include="plugins\images\spritemap.html" />
+    <Content Include="plugins\img\sprite-skin-nice.png" />
+    <Content Include="plugins\ion-rangeslider\ion.rangeSlider.css" />
+    <Content Include="plugins\ion-rangeslider\ion.rangeSlider.min.js" />
+    <Content Include="plugins\ion-rangeslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="plugins\jquery-nestable\jquery.nestable.min.css" />
+    <Content Include="plugins\jquery-nestable\jquery.nestable.min.js" />
+    <Content Include="plugins\jquery-print\jQuery.print.js" />
+    <Content Include="plugins\jquery-ricksaw-chart\css\rickshaw.css" />
+    <Content Include="plugins\jquery-ricksaw-chart\js\d3.v2.js" />
+    <Content Include="plugins\jquery-ricksaw-chart\js\raphael-min.js" />
+    <Content Include="plugins\jquery-ricksaw-chart\js\rickshaw.min.js" />
+    <Content Include="plugins\jquery-ricksaw-chart\ricksaw.js" />
+    <Content Include="plugins\jquery-steps\jquery-steps.min.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-ar-mill.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-au-mill.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-de-mill.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-north_america-mill.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-uk_countries-mill.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap.css" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap.min.js" />
+    <Content Include="plugins\masked-input\bootstrap-inputmask.min.js" />
+    <Content Include="plugins\masked-input\jquery.maskedinput.min.js" />
+    <Content Include="plugins\metismenu\metismenu.min.js" />
+    <Content Include="plugins\moment-range\moment-range.js" />
+    <Content Include="plugins\moment\moment.min.js" />
+    <Content Include="plugins\morris-js\morris.min.css" />
+    <Content Include="plugins\morris-js\morris.min.js" />
+    <Content Include="plugins\morris-js\raphael-js\raphael.min.js" />
+    <Content Include="plugins\nanoscrollerjs\jquery.nanoscroller.min.js" />
+    <Content Include="plugins\noUiSlider\jquery.nouislider.all.min.js" />
+    <Content Include="plugins\noUiSlider\jquery.nouislider.min.css" />
+    <Content Include="plugins\noUiSlider\jquery.nouislider.pips.min.css" />
+    <Content Include="plugins\pace\pace.min.css" />
+    <Content Include="plugins\pace\pace.min.js" />
+    <Content Include="plugins\parsley\parsley.min.js" />
+    <Content Include="plugins\screenfull\screenfull.js" />
+    <Content Include="plugins\skycons\skycons.min.js" />
+    <Content Include="plugins\summernote\summernote.min.css" />
+    <Content Include="plugins\summernote\summernote.min.js" />
+    <Content Include="plugins\switchery\switchery.min.css" />
+    <Content Include="plugins\switchery\switchery.min.js" />
+    <Content Include="plugins\tag-it\jquery.tagit.css" />
+    <Content Include="plugins\tag-it\tag-it.min.js" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="plugins\weather-icons\weather-icons.min.css" />
+    <Content Include="default\table-datatable.html" />
+    <Content Include="default\table-footable.html" />
+    <Content Include="default\table-static.html" />
+    <Content Include="default\ui-accordions.html" />
+    <Content Include="default\ui-animation.html" />
+    <Content Include="default\ui-button.html" />
+    <Content Include="default\ui-components.html" />
+    <Content Include="default\ui-dragdrop.html" />
+    <Content Include="default\ui-fontawesome.html" />
+    <Content Include="default\ui-grids.html" />
+    <Content Include="default\ui-icons.html" />
+    <Content Include="default\ui-nested-lists.html" />
+    <Content Include="default\ui-panel.html" />
+    <Content Include="default\ui-tab.html" />
+    <Content Include="default\ui-timeline.html" />
+    <Content Include="default\ui-typography.html" />
+    <Content Include="default\ui-widgets.html" />
+    <Content Include="default\ui-xeditable.html" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LeftNavigation.ascx.cs">
+      <DependentUpon>LeftNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\LeftNavigation.ascx.designer.cs">
+      <DependentUpon>LeftNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm.aspx.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm.aspx.designer.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="plugins\font-awesome\fonts\fontawesome-webfontd41dd41d.eot" />
+    <Content Include="plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.eot" />
+    <Content Include="plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.ttf" />
+    <Content Include="plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.woff" />
+    <Content Include="plugins\fooTable\css\fonts\footable.eot" />
+    <Content Include="plugins\fooTable\css\fonts\footable.ttf" />
+    <Content Include="plugins\fooTable\css\fonts\footable.woff" />
+    <Content Include="plugins\fooTable\css\fonts\footabled41dd41d.eot" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfontd41d.eot" />
+    <Content Include="MasterPage\Site.Master" />
+    <Content Include="default\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="default\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="default\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="default\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="default\plugins\font-awesome\fonts\fontawesome-webfontd41dd41d.eot" />
+    <Content Include="default\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.eot" />
+    <Content Include="default\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.ttf" />
+    <Content Include="default\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.woff" />
+    <Content Include="default\plugins\fooTable\css\fonts\footable.eot" />
+    <Content Include="default\plugins\fooTable\css\fonts\footable.ttf" />
+    <Content Include="default\plugins\fooTable\css\fonts\footable.woff" />
+    <Content Include="default\plugins\fooTable\css\fonts\footabled41dd41d.eot" />
+    <Content Include="default\plugins\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="default\plugins\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="default\plugins\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="default\plugins\weather-icons\font\weathericons-regular-webfontd41d.eot" />
+    <Content Include="MasterPage\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="MasterPage\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="MasterPage\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="MasterPage\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="MasterPage\plugins\font-awesome\fonts\fontawesome-webfontd41dd41d.eot" />
+    <Content Include="MasterPage\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.eot" />
+    <Content Include="MasterPage\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.ttf" />
+    <Content Include="MasterPage\plugins\font-awesome\fonts\fontawesome-webfonte0a5e0a5.woff" />
+    <Content Include="MasterPage\plugins\fooTable\css\fonts\footable.eot" />
+    <Content Include="MasterPage\plugins\fooTable\css\fonts\footable.ttf" />
+    <Content Include="MasterPage\plugins\fooTable\css\fonts\footable.woff" />
+    <Content Include="MasterPage\plugins\fooTable\css\fonts\footabled41dd41d.eot" />
+    <Content Include="MasterPage\plugins\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="MasterPage\plugins\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="MasterPage\plugins\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="MasterPage\plugins\weather-icons\font\weathericons-regular-webfontd41d.eot" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53320/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
